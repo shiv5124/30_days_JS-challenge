@@ -30,7 +30,7 @@ console.log(typeof number)
 console.log(typeof string)
 console.log(typeof boolean)
 console.log(typeof object)
-console.log(typeof array)]
+console.log(typeof array)
 
 //Task 5
 
