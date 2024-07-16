@@ -1,4 +1,4 @@
-//Day 1
+//Day 1 VARIABLES AND DATA TYPES
 
 //Task 1
 

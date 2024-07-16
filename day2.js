@@ -1,4 +1,4 @@
-//Day 2
+//Day 2 OPERATORS
 
 let a = 5
 let b = 2
