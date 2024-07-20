@@ -4,3 +4,4 @@ day 4 had a bit trouble to figure out the factorial part
 day 5 struggled a little in higher order function
 day 6 no issues it was easy
 day 7 learned how to use objects
+day 8 learned es6+ features
