@@ -5,3 +5,4 @@ day 5 struggled a little in higher order function
 day 6 no issues it was easy
 day 7 learned how to use objects
 day 8 learned es6+ features
+day 9 in progress
