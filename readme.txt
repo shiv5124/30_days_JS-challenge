@@ -6,3 +6,4 @@ day 6 no issues it was easy
 day 7 learned how to use objects
 day 8 learned es6+ features
 day 9 learned event and dom manipulation
+day 10 task 10 pending
