@@ -64,6 +64,15 @@ document.getElementById('list').addEventListener('click', function(event) {
 
 // Task 10
 
+document.getElementById("parent").addEventListener('click', function(){
+    document.getElementById("parg").classList.add("blackbor")
+})
 
+var newchild = document.createElement("button")
+newchild.textContent = "Button 3"
+
+var target = document.getElementById("parent")
+
+target.appendChild(newchild)
 
   
