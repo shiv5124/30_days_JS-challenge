@@ -1,5 +1,5 @@
 // Task 1
-                    
+
 /*let newprom = new Promise((resolve, reject) => {
 setTimeout(() => {
     resolve("promise fulfilled!");
@@ -59,6 +59,97 @@ async function secondfunc() {
     console.log(val)
 }
 
-secondfunc();*/
+secondfunc();
 
 // Task 5
+
+
+async function rejectfunc() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            reject("failed")
+        }, 4000)
+    })
+}
+
+async function tryit() {
+    try {
+        await rejectfunc()
+    } catch {
+        console.log("some issues occured")
+    }
+}
+
+tryit()
+
+
+// Task 6
+
+fetch("https://cat-fact.herokuapp.com")
+.then((resp)=>{
+    console.log(resp)
+}).catch((e)=>{console.log(e)})
+
+
+// Task 7
+const url = "https://cat-fact.herokuapp.com"
+async function getapi (){
+fetch(url)
+.then((resp)=>{
+    console.log(resp)
+}).catch((error)=>{
+console.log(error)
+})
+}
+
+async function api(){
+    const result = await getapi()
+    console.log(result) 
+}
+
+api()
+
+
+// Task 8
+
+const p1 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve(50)
+    },1000)
+})
+const p2 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve(150)
+    },2000)
+})
+const p3 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve(1150)
+    },3000)
+})
+
+Promise.all([p1,p2,p3]).then((values)=>{
+    console.log(values)
+})
+*/
+// Task 9
+
+const p1 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve(50)
+    },1000)
+})
+const p2 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve(150)
+    },2000)
+})
+const p3 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve(1150)
+    },3000)
+})
+
+Promise.race([p1,p2,p3]).then((values)=>{
+    console.log(values)
+})
